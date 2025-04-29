@@ -11,10 +11,21 @@ const config: StorybookConfig = {
 	],
 	framework: {
 		name: '@storybook/react-vite',
+
 		options: {},
+	},
+	core: {
+		builder: '@storybook/builder-vite',
 	},
 	docs: {
 		autodocs: true,
+	},
+	viteFinal: (config, { configType }) => {
+		if (configType === 'PRODUCTION') {
+			config.base = '/ignite-lab-design-system/';
+		}
+
+		return config;
 	},
 };
 export default config;
