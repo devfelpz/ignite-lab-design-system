@@ -5,6 +5,8 @@
 }
 
 @theme {
+
+    --color-*:initial;
     --color-gray-900: oklch(0.18 0.004 285.99);
     --color-gray-800: oklch(0.25 0.0075 285.83);
     --color-gray-400: oklch(0.59 0.0212 285.73);
@@ -13,6 +15,9 @@
 
     --color-cyan-500: oklch(0.84 0.0944 223.02);
     --color-cyan-300: oklch(0.87 0.0785 223.23);
+
+    --color-black: oklch(0.18 0.004 285.99);
+    --color-white: oklch(0.91 0.0067 286.27);
 
 
     --text-*: initial;
