@@ -1,0 +1,1 @@
+import{j as o}from"./jsx-runtime-D_zvdyIk.js";const s={parameters:{controls:{matchers:{color:/(background|color)$/i,date:/Date$/i}}}},t=[r=>o.jsx("div",{className:"container",children:o.jsx(r,{})})];export{t as decorators,s as default};
