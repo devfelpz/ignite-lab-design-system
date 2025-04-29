@@ -1,5 +1,5 @@
-import React from "react";
 import type { Preview } from '@storybook/react';
+import React from "react";
 import '../src/index.css';
 const preview: Preview = {
 	parameters: {
@@ -11,5 +11,13 @@ const preview: Preview = {
 		},
 	},
 };
+
+export const decorators = [
+	(Story) => (
+		<div className="container">
+			<Story />
+		</div>
+	),
+];
 
 export default preview;
